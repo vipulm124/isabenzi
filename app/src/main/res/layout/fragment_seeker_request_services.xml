@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp">
+
+                <Button
+                    android:id="@+id/btnPlus"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_plus" />
+                <TextView
+                    android:id="@+id/tvNoOfPersonRequired"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:textColor="@color/seeker"
+                    android:text="1"
+                    android:gravity="center"
+                    android:layout_toLeftOf="@id/btnPlus"
+                    android:layout_centerVertical="true"
+                    android:background="@color/et_color"
+                    android:layout_toStartOf="@id/btnPlus"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/btnMinus"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_toLeftOf="@id/tvNoOfPersonRequired"
+                    android:layout_toStartOf="@id/tvNoOfPersonRequired"
+                    android:background="@drawable/btn_minus" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="No. of Person Required"
+                    android:textColor="@color/seeker"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color" />
+            <RadioGroup
+                android:id="@+id/rGQuestionOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <RadioButton
+                    android:id="@+id/rbWaiter"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:buttonTint="@color/seeker"
+                    android:text="waiter"
+                    android:textColor="@color/seeker"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rbGardener"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:buttonTint="@color/seeker"
+                    android:text="handy gardner"
+                    android:textColor="@color/seeker"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rvDomestic"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:buttonTint="@color/seeker"
+                    android:text="domestic"
+                    android:textColor="@color/seeker"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/llAvailableFrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp"
+                    android:text="From*"
+                    android:textColor="@color/seeker"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDatePicekrFrom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp"
+                    android:text="DD/MM/YY"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvTimePickerFrom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp"
+                    android:text="HH/MM"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvTimePickerTwoFrom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp"
+                    android:text="AM/PM"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAvailableTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp"
+                    android:text="To*"
+                    android:textColor="@color/seeker"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDatePicekrTo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp"
+                    android:text="DD/MM/YY"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvTimePickerTo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp"
+                    android:text="HH/MM"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvTimePickerTwoTo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp"
+                    android:text="AM/PM"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Fees"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/seeker"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etFeesPerDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Per Day"
+                    android:maxLines="1"
+                    android:textColor="@color/seeker"
+                    android:textColorHint="@color/seeker"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etFeesPerHour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Per Hour"
+                    android:visibility="gone"
+                    android:maxLines="1"
+                    android:textColor="@color/seeker"
+                    android:textColorHint="@color/seeker"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/seeker"
+                android:text="Location"
+                android:textCursorDrawable="@null"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color" />
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                tools:context="com.example.isebenzi.activities.SeekerDashboardActivity"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_search_seeker" />
+
+            <Button
+                android:id="@+id/btnSalectProperties"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:background="@drawable/btn_select_properties" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

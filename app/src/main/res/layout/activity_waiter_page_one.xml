@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:text="ASSESSMENT"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="16dp"
+                    android:text="Answered 4 of 12"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 What does 'a la carte' mean?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/rGQuestionOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbqOneA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="a. Ordering meat that is medium to rear."
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqOneB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="b. Ordering items from a menu"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqOneC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="c. Ordering white wine."
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 What is a Chenin Blanc?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/rGQuestionTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbqTwoA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="a. Mexican food."
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqTwoB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="b. White wine"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqTwoC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="c. Sharp steak knife."
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 What is NOT a vegetarian meal?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/rGQuestionThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbqThreeA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="a. Spinach Enchiladas"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqThreeB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="b. Stuffed mushrooms"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqThreeC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="c. Spiced meatballs"
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4 How many shifts did you work in the last 30 days?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/rGQuestionFour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbqFourA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="a. 0 - 8"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqFourB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="b. 9 - 17"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqFourC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="c. 18 +"
+                        android:textColor="@color/black" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/submit_btn" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

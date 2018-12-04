@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:text="ASSESSMENT"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="16dp"
+                    android:text="Answered 8 of 12"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 What do you NOT need to complete a painting job?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/rGQuestionOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbqOneA"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_ladder"
+                        android:drawableRight="@drawable/rsz_ladder"
+                        android:text="a."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbqOneB"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_paintbrush"
+                        android:drawableRight="@drawable/rsz_paintbrush"
+                        android:text="b."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbqOneC"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_hammer"
+                        android:drawableRight="@drawable/rsz_hammer"
+                        android:text="c."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6 To what do you NOT connect a water hose?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/rGQuestionTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbqTwoA"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_tap"
+                        android:drawableRight="@drawable/rsz_tap"
+                        android:text="a."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbqTowB"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_sprinklers"
+                        android:drawableRight="@drawable/rsz_sprinklers"
+                        android:text="b."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbqTwoC"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_electrical_socket"
+                        android:drawableRight="@drawable/rsz_electrical_socket"
+                        android:text="c."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7 What do you do first, mow or rake?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/rGQuestionThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbqThreeA"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_lawn_mower"
+                        android:drawableRight="@drawable/rsz_lawn_mower"
+                        android:text="a."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbqThreeB"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_rake"
+                        android:drawableRight="@drawable/rsz_rake"
+                        android:text="b."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbqThreeC"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8 Select the best wood fastener?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <RadioGroup
+                    android:id="@+id/rGQuestionFour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbqFourA"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_screws"
+                        android:drawableRight="@drawable/rsz_screws"
+                        android:text="a."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbqFourB"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_bolts"
+                        android:drawableRight="@drawable/rsz_bolts"
+                        android:text="b."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbqFourC"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_roller_plugs"
+                        android:drawableRight="@drawable/rsz_roller_plugs"
+                        android:text="c."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/submit_btn" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

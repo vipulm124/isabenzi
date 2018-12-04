@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:text="ASSESSMENT"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="16dp"
+                    android:text="Answered 12 of 12"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9 If a fire breaks out at the work place, who will you call first?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/rGQuestionOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbqOneA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="a. The Owner"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqOneB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="b. The Police"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqOneC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="c. The Fire brigade"
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 What is the most important principle for you in a working environment?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/rGQuestionTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbqTwoA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="a. Trust"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqTwoB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="b. Punctuality"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqTwoC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="c. Remuneration"
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11 While mowing the lawn the lawnmower breaks the sprinkler, what do you do next?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/rGQuestionThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbqThreeA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="a. Continue mowing the lawn as you know the owner will see the damage once the sprinklers go on."
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqThreeB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="b. Switch of the sprinkler and let the owner know."
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqThreeC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="c. Hide the broken sprinkler."
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 What do you think comes first?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/rGQuestionFour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbqFourA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="a. An employee that is remunerated well."
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqFourB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="b. An employee that performs above expectations."
+                        android:textColor="@color/black" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/submit_btn" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

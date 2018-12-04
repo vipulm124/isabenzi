@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="20dp">
+    <CheckBox
+        android:id="@+id/cbSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/seeker"
+        android:visibility="invisible"
+        android:layout_marginLeft="30dp"
+        android:layout_centerVertical="true"/>
+    <com.example.isebenzi.loopj.android.image.SmartImageView
+        android:id="@+id/ivProfilePic"
+        android:layout_toRightOf="@+id/cbSelect"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/place_holder"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/ivProfilePic">
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Garry Brown"
+            android:textStyle="bold"
+            android:textColor="@color/seeker"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/tvRateDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate/Day : 20"
+            android:textColor="@color/seeker"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/tvRateHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate/Hour : 20"
+            android:textColor="@color/seeker"
+            android:textSize="16dp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tvRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Average Rating"
+            android:textColor="@color/seeker"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</RelativeLayout>

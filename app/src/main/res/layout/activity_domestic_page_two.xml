@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:text="ASSESSMENT"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="16dp"
+                    android:text="Answered 8 of 12"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5 What tool will you use to clean a window the most effectively?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/rGQuestionOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbqOneA"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_vacuum"
+                        android:drawableRight="@drawable/rsz_vacuum"
+                        android:text="a."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbqOneB"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_broom"
+                        android:drawableRight="@drawable/rsz_broom"
+                        android:text="b."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbqOneC"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_bucket_and_wiper"
+                        android:drawableRight="@drawable/rsz_bucket_and_wiper"
+                        android:text="c."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6 What tool will you use to clean a tile floor the most effectively?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/rGQuestionTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbqTwoA"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_vacuum"
+                        android:drawableRight="@drawable/rsz_vacuum"
+                        android:text="a."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbqTwoB"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_broom"
+                        android:drawableRight="@drawable/rsz_broom"
+                        android:text="b."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbqTwoC"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_bucket_and_wiper"
+                        android:drawableRight="@drawable/rsz_bucket_and_wiper"
+                        android:text="c."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7 What task do you do first. Vacuum or Dust?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/rGQuestionThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbqThreeA"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_vacuum"
+                        android:drawableRight="@drawable/rsz_vacuum"
+                        android:text="a."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbqThreeB"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_dust"
+                        android:drawableRight="@drawable/rsz_dust"
+                        android:text="b."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbqThreeC"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8 Which of these items will require the least heat while ironing"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/rGQuestionFour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbqFourA"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_satin"
+                        android:drawableRight="@drawable/rsz_satin"
+                        android:text="a."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbqFourB"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_cotton"
+                        android:drawableRight="@drawable/rsz_cotton"
+                        android:text="b."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbqFourC"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/colorPrimary"
+                        android:drawableEnd="@drawable/rsz_denim"
+                        android:drawableRight="@drawable/rsz_denim"
+                        android:text="c."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/submit_btn" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

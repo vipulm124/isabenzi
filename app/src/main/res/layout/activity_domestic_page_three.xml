@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:text="ASSESSMENT"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="16dp"
+                    android:text="Answered 12 of 12"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9 If the power goes out, what do you do next?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/rGQuestionOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbqOneA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="a. Pack a way everything neatly and go home."
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqOneB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="b. Continue with task that do not require electricity."
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqOneC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="c. Phone your employer and ask if you can leave."
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 What is the most important principle for you in a working environment?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/rGQuestionTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbqTwoA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="a. Trust"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqTwoB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="b. Punctuality"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqTwoC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="c. Remuneration"
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11 While ironing, you burn your employer's garment, what do you do next?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/rGQuestionThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbqThreeA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="a. Pack a way everything neatly and go home."
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqThreeB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="b. Put the garment in the closet after your are done."
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqThreeC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="c. Put the garment aside to tell your employer."
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 When you arive at your employer's premises, you notice that the kitchen tablecloth  has stain on it. The tablecloth was not put into the washing basket. What do you do next?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="13dp" />
+
+                <RadioGroup
+                    android:id="@+id/rGQuestionFour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbqFourA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="a. Leave the tablecloth till the employer notices the stain."
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqFourB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="b. Remove the tablecloth and put it in next week's washing basket."
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbqFourC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="c. Replace the tablecloth with a clean cloth and put the dirty cloth in the washing basket."
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/submit_btn" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
